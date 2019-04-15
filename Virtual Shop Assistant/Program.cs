@@ -232,18 +232,30 @@ namespace Virtual_Shop_Assistant
     }
     class WarehouseManagement
     {
+        /// <summary>
+        /// Display the warehouse database
+        /// </summary>
         public static void DisplayWarehouseDatabase()
         {
 
         }
+        /// <summary>
+        /// Create a new item entry and create his own barcode
+        /// </summary>
         public static void CreateNewItemEntryWithBarcode()
         {
 
         }
+        /// <summary>
+        /// Display every data of an selected item
+        /// </summary>
         public static void DisplayItemData()
         {
 
         }
+        /// <summary>
+        /// Delete an item from the list. This item will however still be visible on older database backup
+        /// </summary>
         public static void DeleteItemEntry()
         {
 
@@ -296,46 +308,79 @@ namespace Virtual_Shop_Assistant
     }
     class Finance
     {
+        /// <summary>
+        /// Display last 24 hours report
+        /// </summary>
         public static void PastDayReport()
         {
 
         }
+        /// <summary>
+        /// Display last 7 days report
+        /// </summary>
         public static void PastWeekReport()
         {
 
         }
+        /// <summary>
+        /// Display last 30 days report
+        /// </summary>
         public static void PastMonthReport()
         {
 
         }
+        /// <summary>
+        /// Display last 365 days report
+        /// </summary>
         public static void PastYearReport()
         {
 
         }
+        /// <summary>
+        /// Display an report of the selected day
+        /// </summary>
         public static void DailyReport()
         {
 
         }
+        /// <summary>
+        /// Display an report of that selected week
+        /// </summary>
         public static void WeeklyReport()
         {
 
         }
+        /// <summary>
+        /// Display an monthly report of the selected month
+        /// </summary>
         public static void MonthlyReport()
         {
 
         }
+        /// <summary>
+        /// Display an report of that selected year
+        /// </summary>
         public static void YearlyReport()
         {
 
         }
+        /// <summary>
+        /// Display an report of the whole history saved
+        /// </summary>
         public static void GlobalReport()
         {
 
         }
+        /// <summary>
+        /// Display an report between two specified date that the user will choose
+        /// </summary>
         public static void CustomReport()
         {
 
         }
+        /// <summary>
+        /// Add external output, marked as "other" category, and can be seen in reports
+        /// </summary>
         public static void AddExpense()
         {
 
