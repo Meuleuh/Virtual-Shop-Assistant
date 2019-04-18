@@ -190,6 +190,118 @@ namespace Virtual_Shop_Assistant
                     Console.WriteLine("This number is invalid");
                 }
             } // Finance Functions
+            else if (userQuerry == "5")
+            {
+                Console.Clear();
+                Console.WriteLine("Please select a database management function");
+                Console.WriteLine("1- Display a database");
+                Console.WriteLine("2- Display a joined database");
+                Console.WriteLine("3- Display the database list");
+                Console.WriteLine("4- Display an older version of an database");
+                Console.WriteLine("5- Display an joined version of older databases");
+                Console.WriteLine("6- Display an database version list");
+                Console.WriteLine();
+                string userQuerry2 = Console.ReadLine();
+                if (userQuerry2 == "1")
+                {
+                    DatabaseManagement.DisplayActualDatabase();
+                }
+                else if (userQuerry2 == "2")
+                {
+                    DatabaseManagement.DisplayJoinedDatabase();
+                }
+                else if (userQuerry2 == "3")
+                {
+                    DatabaseManagement.DisplayDatabaseList();
+                }
+                else if (userQuerry2 == "4")
+                {
+                    DatabaseManagement.DisplayOldDatabase();
+                }
+                else if (userQuerry2 == "5")
+                {
+                    DatabaseManagement.DisplayOldJoinedDatabase();
+                }
+                else if (userQuerry2 == "6")
+                {
+                    DatabaseManagement.DisplayDatabaseVersionList();
+                }
+                else
+                {
+                    Console.WriteLine("This number is invalid");
+                }
+            } // Database Management Functions
+            else if (userQuerry == "6")
+            {
+                Console.Clear();
+                Console.WriteLine("Please select a user documentation function");
+                Console.WriteLine("1- Display the whole document list");
+                Console.WriteLine("2- Display all document matching some categories");
+                Console.WriteLine("3- Display a document attributes");
+                Console.WriteLine("4- Display a document content");
+                Console.WriteLine("5- Modify a document");
+                Console.WriteLine("6- Modify a document attributes");
+                Console.WriteLine("7- Create a document");
+                Console.WriteLine("8- Create a category");
+                Console.WriteLine("9- Duplicate a document");
+                Console.WriteLine("10- Delete a document");
+                Console.WriteLine("11- Delete a category but keep its files");
+                Console.WriteLine("12- Delete a category and all its files");
+                Console.WriteLine();
+                string userQuerry2 = Console.ReadLine();
+                if (userQuerry2 == "1")
+                {
+                    UserDocumentation.DisplayListAllDocuments();
+                }
+                else if (userQuerry2 == "2")
+                {
+                    UserDocumentation.DisplayListMatchingDocuments();
+                }
+                else if (userQuerry2 == "3")
+                {
+                    UserDocumentation.DisplayDocumentAttributes();
+                }
+                else if (userQuerry2 == "4")
+                {
+                    UserDocumentation.DisplayDocument();
+                }
+                else if (userQuerry2 == "5")
+                {
+                    UserDocumentation.ModifyDocument();
+                }
+                else if (userQuerry2 == "6")
+                {
+                    UserDocumentation.ModifyDocumentAttributes();
+                }
+                else if (userQuerry2 == "7")
+                {
+                    UserDocumentation.CreateDocument();
+                }
+                else if (userQuerry2 == "8")
+                {
+                    UserDocumentation.CreateCategory();
+                }
+                else if (userQuerry2 == "9")
+                {
+                    UserDocumentation.DuplicateDocument();
+                }
+                else if (userQuerry2 == "10")
+                {
+                    UserDocumentation.DeleteDocument();
+                }
+                else if (userQuerry2 == "11")
+                {
+                    UserDocumentation.DeleteCategoryKeepFiles();
+                }
+                else if (userQuerry2 == "12")
+                {
+                    UserDocumentation.DeleteCategoryDeleteFiles();
+                }
+                else
+                {
+                    Console.WriteLine("This number is invalid");
+                }
+            } // User Documentation Functions
         }
     }
     class Barcode
@@ -388,11 +500,135 @@ namespace Virtual_Shop_Assistant
     }
     class DatabaseManagement
     {
+        /// <summary>
+        /// Display the actual version of an database
+        /// </summary>
+        public static void DisplayActualDatabase()
+        {
 
+        }
+        /// <summary>
+        /// Display a joined version of multiple database following the SQL Database "Join" function
+        /// </summary>
+        public static void DisplayJoinedDatabase()
+        {
+
+        }
+        /// <summary>
+        /// Display the database list
+        /// </summary>
+        public static void DisplayDatabaseList()
+        {
+
+        }
+        /// <summary>
+        /// Display an older version of an database
+        /// </summary>
+        public static void DisplayOldDatabase()
+        {
+
+        }
+        /// <summary>
+        /// Combination of "DisplayOldDatabase" function and "DisplayJoinedDatabase" function
+        /// </summary>
+        public static void DisplayOldJoinedDatabase()
+        {
+
+        }
+        /// <summary>
+        /// Display the list of version for a database
+        /// </summary>
+        public static void DisplayDatabaseVersionList()
+        {
+
+        }
     }
     class UserDocumentation
     {
+        /// <summary>
+        /// Display a list of all documents
+        /// </summary>
+        public static void DisplayListAllDocuments()
+        {
 
+        }
+        /// <summary>
+        /// Display a list of all matching documents, filtered using categories
+        /// </summary>
+        public static void DisplayListMatchingDocuments()
+        {
+
+        }
+        /// <summary>
+        /// Display a document attributes
+        /// </summary>
+        public static void DisplayDocumentAttributes()
+        {
+
+        }
+        /// <summary>
+        /// Display a document content
+        /// </summary>
+        public static void DisplayDocument()
+        {
+
+        }
+        /// <summary>
+        /// Modify a document content
+        /// </summary>
+        public static void ModifyDocument()
+        {
+
+        }
+        /// <summary>
+        /// Modify a document attributes
+        /// </summary>
+        public static void ModifyDocumentAttributes()
+        {
+
+        }
+        /// <summary>
+        /// Create a document
+        /// </summary>
+        public static void CreateDocument()
+        {
+
+        }
+        /// <summary>
+        /// Create a category
+        /// </summary>
+        public static void CreateCategory()
+        {
+
+        }
+        /// <summary>
+        /// Duplicate a document
+        /// </summary>
+        public static void DuplicateDocument()
+        {
+
+        }
+        /// <summary>
+        /// Delete a document
+        /// </summary>
+        public static void DeleteDocument()
+        {
+
+        }
+        /// <summary>
+        /// Delete a category but keep the files from deletion
+        /// </summary>
+        public static void DeleteCategoryKeepFiles()
+        {
+
+        }
+        /// <summary>
+        /// Delete a category and all the files that are part of it
+        /// </summary>
+        public static void DeleteCategoryDeleteFiles()
+        {
+
+        }
     }
     class AppDocumentation
     {
